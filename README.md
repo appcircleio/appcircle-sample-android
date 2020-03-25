@@ -1,1 +1,1 @@
-# appcircle-sample-android
+# AppCircle Sample App for Android
