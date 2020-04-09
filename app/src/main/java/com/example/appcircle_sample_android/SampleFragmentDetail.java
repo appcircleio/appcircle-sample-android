@@ -30,7 +30,7 @@ public class SampleFragmentDetail extends Fragment {
 
         activity.showHomeItem(true);
         TextView appVersionTextView = view.findViewById(R.id.appVersionTextView);
-        appVersionTextView.setText("v" + activity.getAppVersionName());
+        appVersionTextView.setText("v" + BuildConfig.CUSTOM_CONFIG_FIELD);
         return view;
     }
 
