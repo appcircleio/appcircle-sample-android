@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 
@@ -29,8 +30,16 @@ public class SampleFragmentDetail extends Fragment {
         View view = inflater.inflate(R.layout.fragment_sample_detail, container, false);
 
         activity.showHomeItem(true);
-        TextView appVersionTextView = view.findViewById(R.id.appVersionTextView);
-        appVersionTextView.setText("v" + BuildConfig.CUSTOM_CONFIG_FIELD);
+        TextView textView = view.findViewById(R.id.textView);
+        String apiUrl = BuildConfig.APPCIRCLE_API_URL;
+        textView.setText("Api URL: " + apiUrl);
+
+        if(URLValidator.validate(apiUrl)) {
+            Toast.makeText(activity, "The URL " + apiUrl + " is valid", Toast.LENGTH_LONG).show();
+        } else {
+            Toast.makeText(activity, "The URL " + apiUrl + " isn't valid", Toast.LENGTH_LONG).show();
+        }
+
         return view;
     }
 
