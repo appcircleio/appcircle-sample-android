@@ -34,7 +34,7 @@ public class SampleFragmentDetail extends Fragment {
         String apiUrl = BuildConfig.APPCIRCLE_API_URL;
         textView.setText("Api URL: " + apiUrl);
 
-        if(URLValidator.validate(apiUrl)) {
+        if(URLValidator.isValid(apiUrl)) {
             Toast.makeText(activity, "The URL " + apiUrl + " is valid", Toast.LENGTH_LONG).show();
         } else {
             Toast.makeText(activity, "The URL " + apiUrl + " isn't valid", Toast.LENGTH_LONG).show();

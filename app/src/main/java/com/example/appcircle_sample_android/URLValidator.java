@@ -11,7 +11,7 @@ public class URLValidator {
 
     private static final Pattern URL_PATTERN = Pattern.compile(OWASP_URL_REGEX);
 
-    public static boolean validate(String url) {
+    public static boolean isValid(String url) {
         if (url == null) {
             return false;
         }
