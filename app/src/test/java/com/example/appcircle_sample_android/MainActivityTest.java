@@ -33,7 +33,7 @@ public class MainActivityTest
     }
 
     @Test
-    public void shouldHaveWelcomeFragment() throws Exception
+    public void shouldHaveRootLayout() throws Exception
     {
         assertNotNull( activity.findViewById(R.id.rootLayout));
     }
