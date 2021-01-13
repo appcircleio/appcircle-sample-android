@@ -12,10 +12,10 @@
         <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/ic_app_circle_icon"/>
+            android:src="@drawable/ic_app_icon"/>
         <TextView
             android:layout_width="wrap_content"
-            android:text="Appcircle.io"
+            android:text="@string/labelText"
             android:textStyle="bold"
             android:textSize="36sp"
             android:textColor="@color/colorBlack"
