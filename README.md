@@ -12,3 +12,4 @@ If you encounter any issues related with the app in this repository, you can rai
 If you have any other issues or questions about Appcircle, you can contact us via our [contact form on Appcircle.io](https://appcircle.io/support) or join our Slack community at [slack.appcircle.io](slack.appcircle.io)
 
 
+
