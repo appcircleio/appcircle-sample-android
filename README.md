@@ -1,5 +1,4 @@
 # Appcircle Sample App for Native (Java/Kotlin) Android Builds
-
 This is a sample Smartface app for testing Android App build functionality in Appcircle. As a Java project, this repository can be used for Android builds. 
 
 ## Using the Appcircle Build Module
