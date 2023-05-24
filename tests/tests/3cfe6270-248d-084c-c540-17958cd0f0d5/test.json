@@ -1,0 +1,159 @@
+{
+    "version": 4,
+    "id": "3cfe6270-248d-084c-c540-17958cd0f0d5",
+    "title": "Test1",
+    "steps": [
+        {
+            "id": "40d467cd-6c6f-79bf-290d-ca83e28c47b1",
+            "type": "startApp",
+            "optional": false,
+            "createdOn": 1683725621105,
+            "packageName": "com.appcircle.appcircle_sample_android",
+            "activityName": "com.example.appcircle_sample_android.MainActivity",
+            "deleteAppData": false,
+            "grantPermissions": [],
+            "allPermissions": [],
+            "grantIosPermissions": [
+                "all",
+                "calendar",
+                "contacts-limited",
+                "contacts",
+                "location-always",
+                "location",
+                "photos-add",
+                "photos",
+                "media-library",
+                "microphone",
+                "motion",
+                "reminders",
+                "siri"
+            ],
+            "allIosPermissions": [
+                "all",
+                "calendar",
+                "contacts-limited",
+                "contacts",
+                "location-always",
+                "location",
+                "photos-add",
+                "photos",
+                "media-library",
+                "microphone",
+                "motion",
+                "reminders",
+                "siri"
+            ],
+            "os": "Android",
+            "iosBundleId": ""
+        }
+    ],
+    "deviceData": {
+        "os": "Android",
+        "abi": "arm64-v8a",
+        "sdk": "33",
+        "osVersion": "13",
+        "size": "1080x2400",
+        "serial": "EMULATOR31X3X11X0",
+        "name": "sdk_gphone64_arm64",
+        "brand": "google",
+        "currentRotation": "ROTATION_0",
+        "rotationVars": {
+            "portrait": "ROTATION_0",
+            "landscape": "ROTATION_90",
+            "upsideDown": "ROTATION_180",
+            "seascape": "ROTATION_270"
+        },
+        "isSimulator": true
+    },
+    "createdOn": 1683724708438,
+    "changedOn": 1683725642059,
+    "isWorkingCopy": false,
+    "testRuns": [
+        {
+            "id": "de34ce36-6371-00b2-b1b1-7ac1deb9176a",
+            "date": 1683725665287,
+            "completed": true,
+            "stepResults": [],
+            "deviceData": {
+                "os": "Android",
+                "abi": "arm64-v8a",
+                "sdk": "33",
+                "osVersion": "13",
+                "size": "1080x2400",
+                "serial": "EMULATOR31X3X11X0",
+                "name": "sdk_gphone64_arm64",
+                "brand": "google",
+                "currentRotation": "ROTATION_0",
+                "rotationVars": {
+                    "portrait": "ROTATION_0",
+                    "landscape": "ROTATION_90",
+                    "upsideDown": "ROTATION_180",
+                    "seascape": "ROTATION_270"
+                },
+                "isSimulator": true
+            },
+            "duration": 875,
+            "appStartupDuration": 284,
+            "appVersions": [
+                {
+                    "packageName": "com.appcircle.appcircle_sample_android",
+                    "name": "1.0.13",
+                    "code": 13,
+                    "minSdk": 21,
+                    "targetSdk": 29,
+                    "firstInstallTime": "2023-05-10 16:31:04",
+                    "lastUpdateTime": "2023-05-10 16:31:04"
+                }
+            ],
+            "wasSuccessful": true
+        },
+        {
+            "id": "4438a429-7300-7c40-8c6b-377bf8110b89",
+            "date": 1683726740119,
+            "completed": true,
+            "stepResults": [
+                {
+                    "id": "b2a4c360-4a4c-9deb-6de5-15b1fab528f9",
+                    "step": "40d467cd-6c6f-79bf-290d-ca83e28c47b1",
+                    "matches": [],
+                    "scaleFactor": 1,
+                    "success": true,
+                    "screenshot": "2941c699-8018-5316-5698-0925048352c2-screenshot.jpg",
+                    "createdOn": 1683726740235
+                }
+            ],
+            "deviceData": {
+                "os": "Android",
+                "abi": "arm64-v8a",
+                "sdk": "33",
+                "osVersion": "13",
+                "size": "1080x2400",
+                "serial": "EMULATOR31X3X11X0",
+                "name": "sdk_gphone64_arm64",
+                "brand": "google",
+                "currentRotation": "ROTATION_0",
+                "rotationVars": {
+                    "portrait": "ROTATION_0",
+                    "landscape": "ROTATION_90",
+                    "upsideDown": "ROTATION_180",
+                    "seascape": "ROTATION_270"
+                },
+                "isSimulator": true
+            },
+            "duration": 268,
+            "appVersions": [
+                {
+                    "packageName": "com.appcircle.appcircle_sample_android",
+                    "name": "1.0.13",
+                    "code": 13,
+                    "minSdk": 21,
+                    "targetSdk": 29,
+                    "firstInstallTime": "2023-05-10 16:31:04",
+                    "lastUpdateTime": "2023-05-10 16:31:04"
+                }
+            ],
+            "wasSuccessful": true
+        }
+    ],
+    "testRunExports": []
+}
