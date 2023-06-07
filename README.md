@@ -1,4 +1,4 @@
-# Appcircle Sample App for Native (Java/Kotlin) Android Buildssss
+# Appcircle Sample App for Native (Java/Kotlin) Android Buildsssssss
 This is a sample Android for testing Android App build functionality in Appcircle. As a Java project, this repository can be used for Android builds.
 
 ## Using the Appcircle Build Module
