@@ -5,7 +5,7 @@ This is a sample Android for testing Android App build functionality in Appcircl
 You can find more information about the Appcircle Build Module and how to connect a Git repository in the [Appcircle Documentation](https://docs.appcircle.io/build/).mmss
 
 ## Contribution
-You can  contribute to this repository with fixes and feature updates that do not deviate from the original purpose of the app, which is to demonstrate how the Appcircle Build Module is used.
+You can  contribute to this repository with fixes and feature updates that do not deviate from the original purpose of the app, which is to demonstrate how the Appcircle Build Module is used.ssss
 
 ## Reporting an Issue / Reaching Us
 If you encounter any issues related with the app in this repository, you can raise an issue here.s
