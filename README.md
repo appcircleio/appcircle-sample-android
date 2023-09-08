@@ -2,7 +2,7 @@
 This is a sample2 Android for testing Android App build functionality in Appcircle. As a Java project, this repository can be used for Androimd builds...sdfg
 mm
 ## Using the Appcircle Build Modulessssss
-You can find more information about the Appcircle Build Module and how to connect a Git repository in the [Appcircle Documentation](https://docs.appcircle.io/build/).mmsssssa
+You can find more information about the Appcircle Build Module and how to connect a Git repository in the [Appcircle Documentation](https://docs.appcircle.io/build/).mmsssssas
 
 ## Contribution
 You can  contribute to this repository with fixes and feature updates that do not deviate from the original purpose of the app, which is to demonstrate show the Appcircle Build Module is used.ssssq
