@@ -14,7 +14,7 @@ android {
         applicationId "com.appcircle.appcircle_sample_android"
         minSdkVersion 21
         targetSdkVersion 33
-        
+
         if (System.getenv("AC_APPCIRCLE")) {
             def buildNumber = System.getenv("AC_BUILD_NUMBER")
             versionName = "1.0." + buildNumber
@@ -23,7 +23,7 @@ android {
             versionCode 2
             versionName "1.0.1"
         }
-        
+
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         buildConfigField "String", "APPCIRCLE_API_URL", "\"${System.env.AC_API_URL}\""
     }
