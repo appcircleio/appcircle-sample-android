@@ -1,15 +1,23 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 'android-R'
+    compileSdkVersion 29
     buildToolsVersion "29.0.2"
     defaultConfig {
         vectorDrawables.useSupportLibrary = true
-        applicationId "com.example.appcircle_sample_android"
+        applicationId "com.appcircle.appcircle_sample_android"
         minSdkVersion 21
-        targetSdkVersion 'R'
-        versionCode 1
-        versionName "1.0.0"
+        targetSdkVersion 29
+        
+        if (System.getenv("AC_APPCIRCLE")) {
+            def buildNumber = System.getenv("AC_BUILD_NUMBER")
+            versionName = "1.0." + buildNumber
+            versionCode = Integer.valueOf(buildNumber)
+        } else {
+            versionCode 2
+            versionName "1.0.1"
+        }
+        
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         buildConfigField "String", "APPCIRCLE_API_URL", "\"${System.env.AC_API_URL}\""
     }
