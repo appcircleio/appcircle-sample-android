@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 29
     defaultConfig {
         vectorDrawables.useSupportLibrary = true
         applicationId "com.appcircle.appcircle_sample_android"
         minSdkVersion 21
-        targetSdkVersion 29
+        compileSdk 31
+        targetSdkVersion 31
         
         if (System.getenv("AC_APPCIRCLE")) {
             def buildNumber = System.getenv("AC_BUILD_NUMBER")
