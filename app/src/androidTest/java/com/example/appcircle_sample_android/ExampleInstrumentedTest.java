@@ -3,9 +3,7 @@ package com.example.appcircle_sample_android;
 import android.content.Context;
 
 import androidx.test.InstrumentationRegistry;
-import androidx.test.espresso.ViewAction;
-import androidx.test.runner.AndroidJUnit4;
-
+import androidx.test.ext.junit.runners.AndroidJUnit4;
 import androidx.test.ext.junit.rules.ActivityScenarioRule;
 
 import org.junit.Rule;
