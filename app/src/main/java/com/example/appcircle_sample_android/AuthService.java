@@ -38,7 +38,6 @@ public class AuthService {
 
         JSONObject jsonBody = new JSONObject();
         try {
-            jsonBody.put("OrganizationId", Environment.ORGANIZATION_ID);
             jsonBody.put("ProfileId", Environment.PROFILE_ID);
             jsonBody.put("Secret", Environment.SECRET);
         } catch (JSONException e) {
