@@ -6,7 +6,7 @@ android {
     }
     compileSdkVersion 33
     namespace 'com.example.appcircle_sample_android'
-    buildToolsVersion "33.0.0"
+    buildToolsVersion "33.0.1"
 
 
     defaultConfig {
@@ -46,4 +46,16 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test:runner:1.4.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    // Cucumber dependencies
+    testImplementation 'io.cucumber:cucumber-android:7.11.1'
+    testImplementation 'io.cucumber:cucumber-java:7.11.1'
+    testImplementation 'io.cucumber:cucumber-junit:7.11.1'
+    testImplementation 'io.cucumber:cucumber-android-instrumentation:7.11.1'
+
+    // Desugaring library for Java 8 features
+    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:1.2.2'
+
+    // JUnit dependency
+    testImplementation 'junit:junit:4.13.2'
 }
