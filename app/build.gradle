@@ -11,7 +11,6 @@ android {
 
     defaultConfig {
         vectorDrawables.useSupportLibrary = true
-        applicationId "com.appcircle.appcircle_sample_android"
         minSdkVersion 21
         targetSdkVersion 33
         
@@ -28,13 +27,35 @@ android {
         buildConfigField "String", "APPCIRCLE_API_URL", "\"${System.env.AC_API_URL}\""
     }
 
+    flavorDimensions 'appName'
+    productFlavors {
+        smartface {
+            dimension 'appName'
+            applicationId "com.smartface.SmartfaceApp"
+            resValue "string", "app_name", "SmartfaceApp"
+            resValue "string", "labelText", "Smartface.io"
+            manifestPlaceholders = [
+                    appIcon: "@drawable/ic_launcher"
+            ]
+        }
+        appcircle {
+            dimension 'appName'
+            applicationId "com.appcircle.AppcircleApp"
+            resValue "string", "app_name", "AppcircleApp"
+            resValue "string", "labelText", "Appcircle.io"
+            manifestPlaceholders = [
+                    appIcon: "@mipmap/ic_launcher"
+            ]
+        }
+    }
+
+
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-
 }
 
 dependencies {
