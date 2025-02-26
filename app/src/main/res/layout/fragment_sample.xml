@@ -5,9 +5,10 @@
     tools:context=".SampleFragment">
 
     <LinearLayout
+        android:layout_marginTop="32dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
+        android:gravity="top|center_horizontal"
         android:orientation="vertical">
         <ImageView
             android:layout_width="50dp"
@@ -20,14 +21,13 @@
             android:textSize="24sp"
             android:textColor="@color/colorBlack"
             android:layout_height="wrap_content" />
-        <Button
-            android:id="@+id/button"
-            android:layout_marginTop="50dp"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:textAllCaps="false"
-            android:textColor="@color/colorWhite"
-            android:background="@drawable/background_button"
-            android:text="Next Page" />
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="90dp" />
 </FrameLayout>

@@ -5,7 +5,7 @@ android {
         buildConfig = true
     }
     compileSdkVersion 33
-    namespace 'com.example.appcircle_sample_android'
+    namespace 'com.appcircle.appcircle_sample_android'
     buildToolsVersion "33.0.0"
 
 
@@ -20,8 +20,8 @@ android {
             versionName = "1.0." + buildNumber
             versionCode = Integer.valueOf(buildNumber)
         } else {
-            versionCode 2
-            versionName "1.0.1"
+            versionCode 1
+            versionName "1.0"
         }
         
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -38,6 +38,9 @@ android {
 }
 
 dependencies {
+    implementation 'com.squareup.okhttp3:okhttp:4.9.3'
+    implementation 'com.google.code.gson:gson:2.8.8'
+
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'

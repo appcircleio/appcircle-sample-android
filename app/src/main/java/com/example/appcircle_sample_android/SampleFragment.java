@@ -4,10 +4,13 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 public class SampleFragment extends Fragment {
     MainActivity activity;
@@ -26,15 +29,10 @@ public class SampleFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_sample, container, false);
-        nextPageBtn = view.findViewById(R.id.button);
-        nextPageBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                SampleFragmentDetail detailFragment = new SampleFragmentDetail();
-                detailFragment.activity = activity;
-                activity.replaceFragment(detailFragment, true);
-            }
-        });
+
+        TextView version = view.findViewById(R.id.textView4);
+        String packageName = "v" + activity.getAppVersionName();
+        version.setText(packageName);
 
         activity.showHomeItem(false);
         return view;
