@@ -34,7 +34,8 @@ public class MainActivity extends AppCompatActivity {
         newFragment.setActivity(this);
         this.replaceFragment(newFragment, false);
 
-        new GetAccessTokenTask().execute();
+        //TODO in order to work with this branch you need to uncomment this code and fill in the blanks in ENVIRONMENT file
+        //new GetAccessTokenTask().execute();
     }
 
     private void showUpdateDialog(final String storePrefix, final String profileId, final AppVersion appVersion, final String accessToken, final String userEmail) {
