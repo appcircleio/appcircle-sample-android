@@ -12,7 +12,7 @@ import static org.junit.Assert.*;
 public class URLValidatorUnitTest {
 
     @Test
-    public void invalid_url_test() {
+    public void isvalid_url_test() {
         boolean isValid = URLValidator.isValid("http:/www.google.com");
         assertFalse(isValid);
     }
@@ -20,6 +20,17 @@ public class URLValidatorUnitTest {
     @Test
     public void valid_url_test() {
         boolean isValid = URLValidator.isValid("https://www.google.com");
+        assertTrue(isValid);
+    }
+    @Test
+    public void invalid_url_test() {
+        boolean isValid = URLValidator.isValid("htps://www.google.com");
+        assertTrue(isValid);
+    }
+
+    @Test
+    public void invalid_url_test_2() {
+        boolean isValid = URLValidator.isValid("htps://mockurl");
         assertTrue(isValid);
     }
 }
