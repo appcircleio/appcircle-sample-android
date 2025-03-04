@@ -38,15 +38,15 @@ public class MainActivity extends AppCompatActivity {
         //new GetAccessTokenTask().execute();
     }
 
-    private void showUpdateDialog(final String storePrefix, final String profileId, final AppVersion appVersion, final String accessToken, final String userEmail) {
+    private void showUpdateDialog(final String storeURL, final String profileId, final AppVersion appVersion, final String accessToken, final String userEmail) {
         new AlertDialog.Builder(this)
                 .setTitle("Update Available")
                 .setMessage(appVersion.getVersion() + " version is available. Do you want to update?")
                 .setPositiveButton("Update", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        String baseDownloadURL = "https://%s.store.appcircle.io/api/profile/%s/appVersions/%s/download-update/%s/user/%s";
-                        Uri downloadURL =  Uri.parse(String.format(baseDownloadURL, storePrefix, profileId, appVersion.getId(), accessToken, userEmail));
+                        String baseDownloadURL = "https://%s/api/app-versions/%s/download-version/%s/user/%s";
+                        Uri downloadURL =  Uri.parse(String.format(baseDownloadURL, storeURL, appVersion.getId(), accessToken, userEmail));
                         Intent intent = new Intent(Intent.ACTION_VIEW, downloadURL);
                         startActivity(intent);
                     }
@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
 
                                 @Nullable  AppVersion latestVersion = versionUtils.getLatestVersion(versionName, appVersions);
                                 if (latestVersion != null) {
-                                    showUpdateDialog(Environment.STORE_PREFIX, profileId, latestVersion, accessToken, "USER_EMAIL");
+                                    showUpdateDialog(Environment.STORE_URL, profileId, latestVersion, accessToken, "USER_EMAIL");
                                 }
                             } else {
                                 Log.d("MainActivity", "Current Version Not Found");
