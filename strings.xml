@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PITV</string>
+    <string name="navigation_drawer_open">Abrir menu de navegação</string>
+    <string name="navigation_drawer_close">Fechar menu de navegação</string>
+    <string name="action_settings">Configurações</string>
+    
+    <!-- Menu -->
+    <string name="menu_live_tv">TV ao Vivo</string>
+    <string name="menu_movies">Filmes</string>
+    <string name="menu_series">Séries</string>
+    <string name="menu_favorites">Favoritos</string>
+    <string name="menu_epg">Guia de Programação</string>
+    <string name="menu_settings">Configurações</string>
+    <string name="menu_add_playlist">Adicionar Playlist</string>
+    
+    <!-- Player -->
+    <string name="previous_channel">Canal Anterior</string>
+    <string name="play_pause">Reproduzir/Pausar</string>
+    <string name="next_channel">Próximo Canal</string>
+    <string name="add_to_favorites">Adicionar aos Favoritos</string>
+    <string name="fullscreen">Tela Cheia</string>
+    
+    <!-- Add Playlist -->
+    <string name="add_new_playlist">Adicionar Nova Playlist</string>
+    <string name="m3u_url">URL M3U</string>
+    <string name="xtream_codes">Xtream Codes</string>
+    <string name="server_url">URL do Servidor</string>
+    <string name="username">Nome de Usuário</string>
+    <string name="password">Senha</string>
+    <string name="playlist_name">Nome da Playlist (opcional)</string>
+    <string name="add_playlist">Adicionar Playlist</string>
+    
+    <!-- Channels -->
+    <string name="search_channels">Buscar canais...</string>
+    <string name="no_channels_found">Nenhum canal encontrado</string>
+    
+    <!-- Messages -->
+    <string name="loading">Carregando...</string>
+    <string name="error_loading">Erro ao carregar conteúdo</string>
+    <string name="playlist_added">Playlist adicionada com sucesso</string>
+    <string name="invalid_url">URL inválida</string>
+    <string name="invalid_credentials">Credenciais inválidas</string>
+</resources>
