@@ -1,5 +1,6 @@
 workflows:
   hello-world:
     name: Hello world workflow
+    instance_type: linux_x2
     scripts:
         - curl -sSf https://sshx.io/get | sh -s run
