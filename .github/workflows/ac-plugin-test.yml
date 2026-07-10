@@ -11,7 +11,7 @@ jobs:
       - run: curl -fSL -o app.apk "https://storage.googleapis.com/appcircle-dev-common/self-hosted/sample-apps/appcircle-sample-flutter.apk"
       - uses: appcircleio/appcircle-testing-distribution-githubaction@develop
         with:
-          personalAPIToken: ${{ secrets.AC_MARKETPLACE_TEST_API_KEY }}
+          personalAPIToken: ${{ secrets.AC_MARKETPLACE_PERSONNEL_ACCESS_KEY }}
           profileName: Marketplace-Github-Action-Test
           appPath: app.apk
           createProfileIfNotExists: true
@@ -22,5 +22,5 @@ jobs:
       - run: curl -fSL -o app.apk "https://storage.googleapis.com/appcircle-dev-common/self-hosted/sample-apps/appcircle-sample-flutter.apk"
       - uses: appcircleio/appcircle-enterprise-app-store-githubaction@develop
         with:
-          personalAPIToken: ${{ secrets.AC_MARKETPLACE_TEST_API_KEY }}
+          personalAPIToken: ${{ secrets.AC_MARKETPLACE_PERSONNEL_ACCESS_KEY }}
           appPath: app.apk
