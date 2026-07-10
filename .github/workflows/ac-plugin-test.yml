@@ -4,7 +4,7 @@ on:
     branches:
       - feature/pl-311-marketplacetest
 jobs:
-  td-ios:
+  td:
     runs-on: ubuntu-latest
     steps:
       - run: echo "TD Test Job v4"
@@ -15,7 +15,7 @@ jobs:
           profileName: Marketplace-Github-Action-Test
           appPath: app.apk
           createProfileIfNotExists: true
-  eas-ios:
+  eas:
     runs-on: ubuntu-latest
     steps:
       - run: echo "EAS Test Job v4"
