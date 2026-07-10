@@ -1,0 +1,26 @@
+name: AC Plugin Test
+on:
+  push:
+    branches:
+      - feature/pl-311-marketplacetest
+jobs:
+  td-ios:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "TD Test Job"
+      - run: curl -fSL -o app.apk "https://storage.googleapis.com/appcircle-dev-common/self-hosted/sample-apps/appcircle-sample-flutter.apk"
+      - uses: appcircleio/appcircle-testing-distribution-githubaction@develop
+        with:
+          personalAPIToken: ${{ secrets.AC_MARKETPLACE_TEST_API_KEY }}
+          profileName: Marketplace-Github-Action-Test
+          appPath: app.apk
+          createProfileIfNotExists: true
+  eas-ios:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "EAS Test Job"
+      - run: curl -fSL -o app.apk "https://storage.googleapis.com/appcircle-dev-common/self-hosted/sample-apps/appcircle-sample-flutter.apk"
+      - uses: appcircleio/appcircle-enterprise-app-store-githubaction@develop
+        with:
+          personalAPIToken: ${{ secrets.AC_MARKETPLACE_TEST_API_KEY }}
+          appPath: app.apk
