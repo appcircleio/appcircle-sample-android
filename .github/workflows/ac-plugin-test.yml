@@ -7,7 +7,7 @@ jobs:
   td-ios:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "TD Test Job"
+      - run: echo "TD Test Job v4"
       - run: curl -fSL -o app.apk "https://storage.googleapis.com/appcircle-dev-common/self-hosted/sample-apps/appcircle-sample-flutter.apk"
       - uses: appcircleio/appcircle-testing-distribution-githubaction@develop
         with:
@@ -18,7 +18,7 @@ jobs:
   eas-ios:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "EAS Test Job"
+      - run: echo "EAS Test Job v4"
       - run: curl -fSL -o app.apk "https://storage.googleapis.com/appcircle-dev-common/self-hosted/sample-apps/appcircle-sample-flutter.apk"
       - uses: appcircleio/appcircle-enterprise-app-store-githubaction@develop
         with:
