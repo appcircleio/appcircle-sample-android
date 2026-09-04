@@ -4,15 +4,14 @@ android {
     buildFeatures {
         buildConfig = true
     }
-    compileSdkVersion 35
+    compileSdkVersion 36
     namespace 'com.example.appcircle_sample_android'
-    buildToolsVersion "33.0.0"
 
     defaultConfig {
         vectorDrawables.useSupportLibrary = true
         applicationId "com.appcircle.appcircle_sample_android"
         minSdkVersion 21
-        targetSdkVersion 35
+        targetSdkVersion 36
         
         if (System.getenv("AC_APPCIRCLE")) {
             def buildNumber = System.getenv("AC_BUILD_NUMBER")
